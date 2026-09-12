@@ -1,11 +1,9 @@
-package main.java.com.github.jamesrvickers.drawingidentifier;
+package com.github.jamesrvickers.drawingidentifier;
 
-import java.io.*;
-import javax.swing.*;
+import javax.swing.SwingUtilities;
 
 public class Main {
-    JFrame frame = new JFrame();
-    frame.setSize(500, 600);
-    frame.setLayout(null);
-    frame.setVisible(true);
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(DrawingCanvas::createAndShowGui);
+    }
 }
